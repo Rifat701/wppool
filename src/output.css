@@ -855,6 +855,10 @@ video {
   margin-top: auto;
 }
 
+.mt-\[10px\] {
+  margin-top: 10px;
+}
+
 .block {
   display: block;
 }
@@ -1731,8 +1735,16 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:block {
     display: block;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:grid-cols-2 {
@@ -1746,6 +1758,10 @@ video {
 
   .md\:p-3 {
     padding: 0.75rem;
+  }
+
+  .md\:p-\[10px\] {
+    padding: 10px;
   }
 
   .md\:pl-\[93px\] {
