@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-body {
+  background-color: #e6e6e6;
+  font-family: "Open Sans", sans-serif;
+}
+
+.shadow {
+  box-shadow: 0px 24px 36px rgba(0, 0, 0, 0.25);
+}
+
+.border-b {
+  border-bottom: 1px solid #90b8f0;
+}
