@@ -62,15 +62,3 @@ new Chart(ctx, {
     },
   },
 });
-
-// NAV JS
-
-window.addEventListener("scroll", function () {
-  var header = document.getElementById("header");
-  if (window.scrollY > 0) {
-    header.classList.remove("hidden");
-    header.classList.add("header-bg-color");
-  } else {
-    header.classList.remove("header-bg-color");
-  }
-});
