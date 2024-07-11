@@ -18,20 +18,26 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="src/output.css" />
-    <link rel="stylesheet" href="src/index.css" />
-    <link rel="stylesheet" href="src/glide.core.min.css" />
+    <link rel="stylesheet" href="src/css/output.css" />
+    <link rel="stylesheet" href="src/css/index.css" />
+    <link rel="stylesheet" href="src/css/glide.core.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-body overflow-x-hidden">
     <!---------- HERO SECTION ---------->
 
-    <div class="fixed top-0 left-0 right-0 px-[100px] py-2 z-50 hidden">
+    <div
+      id="header"
+      class="md:fixed top-0 left-0 right-0 px-5 md:px-[100px] py-2 z-50 bg-blue md:bg-transparent"
+    >
       <div class="flex justify-between items-center">
-        <img class="" src="src/img/logo.png" alt="" />
+        <a href="#"
+          ><img class="w-[160px] md:w-full" src="src/img/logo.png" alt=""
+        /></a>
         <div class="flex justify-center items-center gap-[14px]">
           <a
             href="#"
-            class="p-[14px] rounded-[50%] border flex justify-center items-center"
+            class="p-[14px] rounded-[50%] border flex justify-center items-center hidden md:block"
           >
             <svg
               width="14"
@@ -61,7 +67,7 @@
           </a>
           <a
             href="#"
-            class="flex justify-center items-center border rounded-[124px] py-[10px] px-4 text-[#fff]"
+            class="flex justify-center items-center border rounded-[124px] py-[10px] px-4 text-[#fff] hidden md:block"
             >Download the 2024 Report</a
           >
           <a href="#" id="menu-toggle">
@@ -107,7 +113,7 @@
     >
       <div class="container px-5 mx-auto">
         <div class="flex justify-start items-start">
-          <div class="">
+          <div class="" data-aos="fade-right" data-aos-duration="2000">
             <div class="text-white mb-[50px]">
               <div class="inline-grid text-4xl">
                 60
@@ -136,10 +142,18 @@
             </div>
           </div>
           <div class="text-[#fff] text-center mt-[15px]">
-            <h1 class="md:text-[78px] text-[38px] mb-[10px] font-serif">
+            <h1
+              class="md:text-[78px] text-[38px] mb-[10px] font-serif"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               The WPPOOL Index
             </h1>
-            <p class="md:text-[21px] text-[16px]">
+            <p
+              class="md:text-[21px] text-[16px]"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               Monitor the performance of emerging, publicly traded, financial
               technology companies
             </p>
@@ -153,7 +167,11 @@
     <div class="bg-[#fff] py-8">
       <div class="container px-5 mx-auto">
         <div class="flex flex-wrap justify-start gap-6">
-          <div class="lg:w-[208px] w-full bg-b-300 p-2 m-0 rounded-[14px]">
+          <div
+            class="lg:w-[208px] w-full bg-b-300 p-2 m-0 rounded-[14px]"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <a
               href="#"
               class="bg-blue flex justify-between items-center py-[10px] px-3 rounded-[6px] mb-[10px]"
@@ -259,7 +277,11 @@
           </div>
 
           <div class="m-0">
-            <div class="flex justify-start items-center gap-1 mb-4">
+            <div
+              class="flex justify-start items-center gap-1 mb-4"
+              data-aos="fade-up"
+              data-aos-duration="1600"
+            >
               <svg
                 class="m-0"
                 width="46"
@@ -278,6 +300,8 @@
 
             <div
               class="grid grid-cols-1 md:grid-cols-2 lg:flex justify-center items-center gap-[20px]"
+              data-aos="fade-up"
+              data-aos-duration="1800"
             >
               <div
                 class="flex lg:justify-center justify-between items-center gap-[40px] p-[15px] bg-b-300 rounded-[6px]"
@@ -336,7 +360,11 @@
               </div>
             </div>
 
-            <div class="mt-[20px] flex flex-wrap justify-between items-center">
+            <div
+              class="mt-[20px] flex flex-wrap justify-between items-center"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <div class="flex justify-start items-center gap-3">
                 <a
                   href="#"
@@ -420,11 +448,19 @@
               </div>
             </div>
 
-            <div class="mt-[20px] w-full">
+            <div
+              class="mt-[20px] w-full"
+              data-aos="fade-up"
+              data-aos-duration="2200"
+            >
               <canvas class="lg:w-full" id="myChart"></canvas>
             </div>
 
-            <div class="flex justify-center items-center gap-3 mt-6">
+            <div
+              class="flex justify-center items-center gap-3 mt-6"
+              data-aos="fade-up"
+              data-aos-duration="2200"
+            >
               <div class="flex justify-center items-center gap-[5px]">
                 <svg
                   width="10"
@@ -485,10 +521,20 @@
 
     <div class="bg-[#fff] pb-[10px]">
       <div class="container pt-[53px] px-5 mx-auto">
-        <div class="flex flex-wrap justify-between items-center">
-          <h2 class="text-5xl font-serif text-b-400">All Companies</h2>
+        <div
+          class="flex flex-wrap justify-between items-center overflow-x-hidden"
+        >
+          <h2
+            class="text-5xl font-serif text-b-400"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            All Companies
+          </h2>
           <div
             class="relative mt-[20px] md:mt-0 flex justify-between items-center w-[588px] rounded border border-[#dadada] bg-[#f3f3f3]"
+            data-aos="fade-left"
+            data-aos-duration="2000"
           >
             <input
               class="w-full p-3 pl-[40px] text-sm bg-transparent focus-visible:outline-none text-w-700 font-serif placeholder-b-400 text-[20px]"
@@ -529,7 +575,11 @@
           </div>
         </div>
 
-        <div class="overflow-hidden overflow-y-scroll h-[500px] mt-14">
+        <div
+          class="overflow-hidden overflow-y-scroll h-[500px] mt-14"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <table
             class="w-full overflow-x-auto text-center table-auto text-[#000]"
           >
@@ -1088,10 +1138,18 @@
     <div
       class="mt-[40px] mb-[150px] flex flex-wrap justify-center items-center gap-3 text-[#fff]"
     >
-      <a href="#" class="p-4 bg-blue rounded-[124px] shadow"
+      <a
+        href="#"
+        class="p-4 bg-blue rounded-[124px] shadow"
+        data-aos="fade-right"
+        data-aos-duration="2000"
         >Download ‘All Companies’ Data</a
       >
-      <a href="#" class="py-4 px-[30px] bg-blue rounded-[124px] shadow"
+      <a
+        href="#"
+        class="py-4 px-[30px] bg-blue rounded-[124px] shadow"
+        data-aos="fade-left"
+        data-aos-duration="2000"
         >View Methodology</a
       >
     </div>
@@ -1100,16 +1158,29 @@
 
     <div class="">
       <div class="container px-5 mx-auto">
-        <h2 class="text-4xl font-serif text-b-400">
+        <h2
+          class="text-4xl font-serif text-b-400"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           Potential Future Listings
         </h2>
-        <p class="mt-[18px] mb-[26px]">
+        <p
+          class="mt-[18px] mb-[26px]"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis. <br />
+          vulputate libero et velit interdum, ac aliquet odio mattis.
+          <br class="hidden lg:block" />
           Class aptent taciti sociosqu ad litora torquent per conubia nostra,
           per inceptos himenaeos.
         </p>
-        <div class="grid lg:grid-cols-5 grid-cols-2 gap-[20px] mb-[20px]">
+        <div
+          class="grid lg:grid-cols-5 grid-cols-2 gap-[20px] mb-[20px]"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <div class="py-8 px-11 flex justify-center items-center bg-[#fff]">
             <img src="/src/img/logo1.svg" alt="" />
           </div>
@@ -1156,10 +1227,18 @@
 
     <div class="container mx-auto px-5 mt-[155px]">
       <div class="">
-        <h2 class="font-serif text-5xl mb-[20px]">State of USA</h2>
+        <h2
+          class="font-serif text-5xl mb-[20px]"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          State of USA
+        </h2>
         <a
           href="#"
           class="flex justify-center items-center gap-[46px] bg-blue rounded-[124px] w-[200px]"
+          data-aos="fade-up"
+          data-aos-duration="2000"
         >
           <span class="font-serif text-[42px] text-[#fff]">2024</span>
           <svg
@@ -1172,12 +1251,16 @@
             <path d="M7 7L0 0H14L7 7Z" fill="white" />
           </svg>
         </a>
-        <p class="text-b-400 mt-4 mb-[20px]">
+        <p
+          class="text-b-400 mt-4 mb-[20px]"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           Click through the slides or download the report to view natively on
           your device.
         </p>
 
-        <div class="glide">
+        <div class="glide" data-aos="fade-up" data-aos-duration="2000">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
               <div class="flex justify-center items-center gap-[20px]">
@@ -1312,10 +1395,24 @@
     <!------------ 6TH SECTION ------------>
 
     <div class="container mx-auto px-5 mt-[190px]">
-      <h2 class="font-serif text-5xl text-b-400">Stories & Ideas</h2>
-      <p class="mt-[18px] text-[20px]">The latest news and updates</p>
+      <h2
+        class="font-serif text-5xl text-b-400"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        Stories & Ideas
+      </h2>
+      <p
+        class="mt-[18px] text-[20px]"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        The latest news and updates
+      </p>
       <div
         class="mt-[94px] mb-[88px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]"
+        data-aos="fade-up"
+        data-aos-duration="2000"
       >
         <div
           class="pt-[90px] pl-[20px] pr-[37px] pb-[20px] bg-[#fff] rounded-[8px] relative mb-[50px] lg:mb-0"
@@ -1379,6 +1476,8 @@
       </div>
       <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] pb-[100px] border-b"
+        data-aos="fade-up"
+        data-aos-duration="2000"
       >
         <div
           class="pt-[90px] pl-[20px] pr-[37px] pb-[20px] bg-[#fff] rounded-[8px] relative mb-[50px] lg:mb-0"
@@ -1449,18 +1548,18 @@
         <div
           class="lg:pt-[72px] py-[20px] mb-[72px] lg:pl-[72px] pl-5 flex justify-between items-center px-5 lg:px-0"
         >
-          <div class="">
+          <div class="" data-aos="fade-right" data-aos-duration="2000">
             <h2 class="font-serif text-b-400 text-5xl">About WPPOOL</h2>
             <span class="text-[#7d7f81] text-[30px] mt-[20px]"
               >Investing in wppool for over 50 years</span
             >
             <p class="text-b-400 mt-4 mb-[30px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              mollitia, <br />
+              mollitia, <br class="hidden lg:block" />
               molestiae quas vel sint commodi repudiandae consequuntur
-              voluptatum laborum <br />
+              voluptatum laborum <br class="hidden lg:block" />
               numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga
-              praesentiu <br />
+              praesentiu <br class="hidden lg:block" />
               moptio, eaque rerum! Provident similique accusantium nemo autem.
             </p>
             <a
@@ -1470,7 +1569,13 @@
               Contact WPPOOL
             </a>
           </div>
-          <img src="src/img/Maskbg.png" class="hidden lg:block" alt="" />
+          <img
+            src="src/img/Maskbg.png"
+            class="hidden lg:block"
+            alt=""
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          />
         </div>
       </div>
     </div>
@@ -1478,11 +1583,17 @@
     <!------------ 8TH SECTION ------------>
 
     <div class="container mx-auto px-5">
-      <h2 class="font-serif text-5xl text-b-400 mb-12">
+      <h2
+        class="font-serif text-5xl text-b-400 mb-12"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         Selected WPPOOL Portfolio Companies
       </h2>
       <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-[20px] mb-[20px]"
+        data-aos="fade-up"
+        data-aos-duration="2000"
       >
         <div
           class="py-12 px-[16px] bg-[#fff] flex justify-center items-center rounded-[6px]"
@@ -1597,14 +1708,18 @@
     >
       <div class="container mx-auto">
         <div class="flex flex-wrap justify-start items-start gap-[120px]">
-          <h3 class="font-serif text-[36px] text-b-400">
+          <h3
+            class="font-serif text-[36px] text-b-400"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             Experience remarkable <br class="hidden lg:block" />
             WordPress products with a <br class="hidden lg:block" />
             new level of power, beauty, <br class="hidden lg:block" />
             and human-centered designs.
           </h3>
 
-          <div class="">
+          <div class="" data-aos="fade-up" data-aos-duration="2000">
             <span class="text-[#9FA0A1] text-[20px] block mb-4">Jump to</span>
             <a href="#" class="text-blue text-[20px] block mb-[10px]"
               >About Us</a
@@ -1620,7 +1735,11 @@
             <a href="#" class="text-blue text-[20px] block">About Us</a>
           </div>
 
-          <div class="text-[20px] text-b-400">
+          <div
+            class="text-[20px] text-b-400"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <h4 class="font-bold">Cambridge</h4>
             <p class="mt-2 mb-[30px]">
               70728 Yost Burg, <br />
@@ -1705,12 +1824,18 @@
         <div class="">
           <div
             class="flex justify-start items-center gap-[10px] text-[14px] text-[#9FA0A1] font-bold"
+            data-aos="fade-up"
+            data-aos-duration="2000"
           >
             <span class="">©2024</span>
             <span class="">Terms of Use</span>
             <span class="">Privacy Policy</span>
           </div>
-          <p class="text-[14px] text-[#000] mt-[20px]">
+          <p
+            class="text-[14px] text-[#000] mt-[20px]"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
             mollitia, <br class="hidden lg:block" />
             molestiae quas vel sint commodi repudiandae consequuntur voluptatum
@@ -1729,73 +1854,14 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-      const ctx = document.getElementById("myChart");
-
-      new Chart(ctx, {
-        type: "line",
-        data: {
-          labels: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-          datasets: [
-            {
-              label: "Votes A",
-              data: [
-                12, 19, 3, 5, 2, 15, 9, 7, 14, 8, 11, 4, 20, 13, 10, 15, 8, 17,
-                1, 20, 5, 18, 12, 6, 14, 19, 3, 5, 2, 9, 7, 14, 8, 11, 4, 6, 13,
-                10, 15, 8, 17, 1, 20, 5, 18, 7, 16, 14, 19, 3, 5, 2, 9, 7, 14,
-                8, 11, 4, 6, 13, 10, 15, 8, 17, 1, 20, 5, 18, 7, 16,
-              ],
-              borderWidth: 1,
-              borderColor: "#FC714D",
-              backgroundColor: "rgba(255, 99, 132, 0.2)",
-            },
-            {
-              label: "Votes B",
-              data: [
-                5, 15, 10, 16, 8, 4, 12, 9, 5, 7, 20, 3, 8, 17, 6, 12, 14, 10,
-                18, 15, 7, 13, 5, 20, 8, 16, 4, 6, 9, 11, 13, 7, 5, 12, 10, 8,
-                6, 9, 11, 15, 13, 7, 8, 16, 12, 18, 14, 10,
-              ],
-              borderWidth: 1,
-              borderColor: "#615DE3",
-              backgroundColor: "rgba(54, 162, 235, 0.2)",
-            },
-            {
-              label: "Votes C",
-              data: [
-                3, 8, 20, 5, 10, 7, 6, 14, 9, 11, 4, 12, 8, 16, 7, 10, 11, 13,
-                12, 9, 5, 14, 10, 17, 8, 6, 12, 15, 7, 5, 10, 14, 9, 11, 3, 8,
-                12, 14, 6, 7, 13, 8, 11, 9, 10, 15, 12, 18,
-              ],
-              borderWidth: 1,
-              borderColor: "#AFCD80",
-              backgroundColor: "rgba(75, 192, 192, 0.2)",
-            },
-            {
-              label: "Votes D",
-              data: [
-                3, 8, 13, 25, 10, 7, 6, 14, 9, 11, 4, 12, 8, 16, 17, 10, 11, 13,
-                12, 9, 5, 14, 10, 17, 8, 6, 12, 15, 7, 5, 10, 14, 9, 11, 3, 8,
-                12, 14, 6, 7, 13, 8, 11, 9, 10, 15, 12, 18,
-              ],
-              borderWidth: 1,
-              borderColor: "#6F34A1",
-              backgroundColor: "rgba(153, 102, 255, 0.2)",
-            },
-          ],
-        },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true,
-            },
-          },
-        },
-      });
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
       new Glide(".glide").mount();
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="src/js/main.js"></script>
   </body>
 </html>

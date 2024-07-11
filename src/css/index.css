@@ -19,3 +19,12 @@ a {
 .border-b {
   border-bottom: 1px solid #90b8f0;
 }
+
+.header-bg-color {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Adjust the color and opacity as needed */
+}
